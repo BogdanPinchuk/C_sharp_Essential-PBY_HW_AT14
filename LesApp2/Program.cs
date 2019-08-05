@@ -13,6 +13,7 @@ namespace LesApp2
         {
             // Join Unicode
             Console.OutputEncoding = Encoding.Unicode;
+
             // випадкові числа
             Random rnd = new Random();
 
