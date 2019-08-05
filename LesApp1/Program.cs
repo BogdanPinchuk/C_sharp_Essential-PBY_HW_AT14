@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LesApp0
+namespace LesApp1
 {
     class Program
     {
@@ -24,7 +24,26 @@ namespace LesApp0
             }
             Console.WriteLine();
 
+            Console.WriteLine("\n\tДодавання 10 значень:");
+            Console.WriteLine("\n\tВиведення значень через foreach:\n");
+            for (int i = 0; i < 10; i++)
+            {
+                test.Add(new Element());
+            }
+
             // в MVS 2015 - не підтримуються Nested методи
+            foreach (Element i in test)
+            {
+                Console.WriteLine(i.ToString());
+            }
+
+            Console.WriteLine("\n\tВидалення 7 перших значень:");
+            Console.WriteLine("\n\tВиведення значень через foreach:\n");
+            for (int i = 0; i < 7; i++)
+            {
+                test.RemoveAt(0);
+            }
+
             foreach (Element i in test)
             {
                 Console.WriteLine(i.ToString());
